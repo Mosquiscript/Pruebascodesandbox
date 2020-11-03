@@ -31,6 +31,11 @@ body {
   align-items: center;
 }
 
+.a_navbar {
+  color: white;
+  text-decoration: none;
+}
+
 .btn_dark {
   border-radius: 5px;
 }
@@ -38,18 +43,21 @@ body {
 .btn_apartados {
   height: 50px;
   width: 100px;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .btn_apartados:hover {
-  opacity: 0.6;
+  background-color: rebeccapurple;
+}
+
+.logo_nombre_paguina {
+  color: white;
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
