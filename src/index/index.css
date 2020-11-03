@@ -29,7 +29,6 @@ body {
 .navbar_content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .btn_dark {
@@ -37,7 +36,14 @@ body {
 }
 
 .btn_apartados {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .btn_apartados:hover {
   opacity: 0.6;
 }
