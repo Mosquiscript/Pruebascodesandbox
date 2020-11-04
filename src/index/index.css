@@ -1,5 +1,18 @@
 body {
   font-family: sans-serif;
+  --color-primari-bg: royalblue;
+  --color-secundary-bg: #aca7a7;
+  --color-text: white;
+}
+
+body.dark_mode {
+  font-family: sans-serif;
+  --color-primari-bg: #212e37;
+  --color-secundary-bg: #aca7a7;
+  --color-text: white;
+}
+.fa-tint {
+  color: blue;
 }
 
 .my-1 {
@@ -17,7 +30,7 @@ body {
 }
 
 .navbar {
-  background-color: royalblue;
+  background-color: var(--color-primari-bg);
 }
 
 .container {
@@ -45,16 +58,20 @@ body {
   width: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   cursor: pointer;
 }
 
 .btn_apartados:hover {
-  background-color: rebeccapurple;
+  background-color: var(--color-secundary-bg);
 }
 
 .logo_nombre_paguina {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
 table {
@@ -64,21 +81,50 @@ table {
 }
 
 th {
-  border: 1px solid royalblue;
-  background-color: royalblue;
+  border: 1px solid var(--color-primari-bg);
+  background-color: var(--color-primari-bg);
   color: white;
   text-align: left;
   padding: 8px;
   text-align: center;
 }
 td {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-secundary-bg);
   text-align: left;
   padding: 8px;
   text-align: center;
 }
 
 tr:nth-child(even) {
-  background-color: grey;
+  background-color: var(--color-secundary-bg);
   text-align: center;
+}
+
+/* check_mode */
+
+.label_mode {
+  background-color: white;
+  border-radius: 20px;
+  width: 43px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+
+#check_mode {
+  opacity: 0;
+}
+
+.ball {
+  background-color: var(--color-primari-bg);
+  width: 22px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#check_mode:checked + .label_mode .ball {
+  transform: translateX(21px);
 }

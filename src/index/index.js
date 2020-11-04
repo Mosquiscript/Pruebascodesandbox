@@ -1,5 +1,5 @@
-const button_mode = document.getElementById("button_mode");
+const button_mode = document.getElementById("check_mode");
 
 button_mode.addEventListener("click", () => {
-  alert("hola");
+  document.body.classList.toggle("dark_mode");
 });
